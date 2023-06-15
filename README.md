@@ -50,7 +50,14 @@ helm install base base -n istio-system
 
 helm install istiod istiod -n istio-system 
 
-helm install ingressgateway gateway  -n istio-system 
+helm install ingressgateway gateway  -n istio-system
+
+#To check Charts deployed
+
+helm status base -n istio-system
+helm status istiod -n istio-system
+helm status ingressgateway -n istio-system
+
 ```
 
 5. Check the pods of istio-system
